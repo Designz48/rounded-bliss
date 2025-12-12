@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+
+:root {
+   --input-focus-border-color: Highlight;
+   --input-focus-outline: 0.5px solid Canvas;
+   --input-unfocused-border-color: transparent;
+   --input-disabled-border-color: transparent;
+   --input-hover-border-color: green;
+   --background-primary: hsla(5, 0%, 70%, 0.6);
+}
+
+body {
+	--background-primary: hsla(150, 30%, 30%, 0.5);
+	--background-image: url("/image/blackberry.png");
+	--ribbon-background: transparent;
+	--font-family: Arial;
+	--font-text-theme: "Text Me One", sans-serif;
+	--radius-s: 2px;
+	--radius-m: 2px;
+	--radius-l: 2px;
+	--input-radius: 2px;
+	--tab-radius-active: 2px;
+	--checkbox-radius: 2px;
+	--toggle-radius: 2px;
+	--toggle-thumb-radius: 2px;
+	--slider-thumb-radius: 2px;
+	--text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+}
+
+.workspace-sidedock-vault-profile {
+	var(--background-primary);
+}
+
+
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 2;
+	ry: 2;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+
+.theme-dark {
+    background-image: var(--background-image);
+	background-color: var(--background-primary);
+	background-blend-mode: overlay;
+	background-size: cover;
+	--background-secondary: #222222;
+	font-family: var(--font-family);
+}
+
+
+.theme-light {
+	--background-primary: hsla(150, 60%, 70%, 0.3);
+	--background-secondary: #D9C9FF;
+}
+
+h1 {
+	font-family: var(--font-family);
+}
